@@ -39,4 +39,4 @@ jobs:
 
       - name: Terragrunt Apply
         working-directory: live/dev
-        run: terragrunt run --all apply -auto-approve
+        run: terragrunt run --all apply -- -auto-approve
