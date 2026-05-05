@@ -6,3 +6,13 @@ remote_state {
     region         = "ap-south-1"
   }
 }
+
+generate "backend" {
+  path      = "backend.tf"
+  if_exists = "overwrite"
+  contents  = <<EOF
+terraform {
+  backend "s3" {}
+}
+EOF
+}

@@ -13,7 +13,7 @@ dependency "vpc" {
     public_subnet_id = "subnet-12345678"
   }
 
-  mock_outputs_allowed_terraform_commands = ["plan"]
+  mock_outputs_allowed_terraform_commands = ["init", "plan"]
 }
 
 dependency "sg" {
@@ -23,7 +23,7 @@ dependency "sg" {
     sg_id = "sg-12345678"
   }
 
-  mock_outputs_allowed_terraform_commands = ["plan"]
+  mock_outputs_allowed_terraform_commands = ["init", "plan"]
 }
 
 inputs = {
