@@ -1,8 +1,6 @@
-
-
-
-
-
+terraform {
+  backend "s3" {}
+}
 
 resource "aws_instance" "this" {
   ami           = var.ami
