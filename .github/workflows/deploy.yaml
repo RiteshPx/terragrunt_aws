@@ -31,12 +31,12 @@ jobs:
 
       - name: Terragrunt Init
         working-directory: live/dev
-        run: terragrunt run-all init
+        run: terragrunt run --all init
 
       - name: Terragrunt Plan
         working-directory: live/dev
-        run: terragrunt run-all plan
+        run: terragrunt run --all plan
 
       - name: Terragrunt Apply
         working-directory: live/dev
-        run: terragrunt run-all apply -auto-approve
+        run: terragrunt run --all apply -auto-approve
