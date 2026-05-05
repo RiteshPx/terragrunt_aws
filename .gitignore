@@ -1,0 +1,29 @@
+live/dev/.terragrunt-cache/
+live/prod/.terragrunt-cache/
+
+live/dev/ec2/.terragrunt-cache/
+live/prod/ec2/.terragrunt-cache/
+live/dev/ec2/.terraform.lock.hcl
+live/prod/ec2/.terraform.lock.hcl
+
+live/dev/vpc/.terragrunt-cache/
+live/prod/vpc/.terragrunt-cache/
+live/dev/vpc/.terraform.lock.hcl
+live/prod/vpc/.terraform.lock.hcl
+
+live/dev/security-group/.terragrunt-cache/
+live/prod/security-group/.terragrunt-cache/
+live/dev/security-group/.terraform.lock.hcl
+live/prod/security-group/.terraform.lock.hcl
+
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Terragrunt
+.terragrunt-cache/
+
+# Optional
+*.tfstate
+*.tfstate.backup
